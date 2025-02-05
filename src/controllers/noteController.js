@@ -99,7 +99,7 @@ export const updateNoteById = async (req, res) => {
 
     const updateData = {};
     if (title) updateData.title = title;
-    if (description) updateData.description = description;
+    if (description) updateData.content = description;
 
     const existingImages = note.images || [];
 
